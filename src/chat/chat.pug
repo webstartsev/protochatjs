@@ -1,0 +1,14 @@
+div.chat
+	div.chat__container
+		div.header
+			h2 You are logged in as %username%
+			button.js-logout.btn-logout выйти
+		div.chat__box
+			each message in messages
+				div(class="message-box " + (message.isMine ? "right-img" : "left-img"))
+					div.picture
+						img(src= message.avatar)
+						span.time= message.date.getHours() + ':' + message.date.getMinutes()
+					div.message
+						span=message.name
+						p=message.text

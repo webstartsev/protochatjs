@@ -1,0 +1,27 @@
+function pug_rethrow(n,e,r,t){if(!(n instanceof Error))throw n;if(!("undefined"==typeof window&&e||t))throw n.message+=" on line "+r,n;try{t=t||require("fs").readFileSync(e,"utf8")}catch(e){pug_rethrow(n,null,r)}var i=3,a=t.split("\n"),o=Math.max(r-i,0),h=Math.min(a.length,r+i),i=a.slice(o,h).map(function(n,e){var t=e+o+1;return(t==r?"  > ":"    ")+t+"| "+n}).join("\n");throw n.path=e,n.message=(e||"Pug")+":"+r+"\n"+i+"\n\n"+n.message,n}function authTemplate(locals) {var pug_html = "", pug_mixins = {}, pug_interp;var pug_debug_filename, pug_debug_line;try {var pug_debug_sources = {".\u002Fsrc\u002Fauth\u002Fauth.pug":"h1 Супер чат\nh3 Пожалуйства авторизуйтесь\nform(class=\"auth-form\")\n\tlabel(class=\"auth-form__label\") Email\n\tinput(type=\"text\" palceholder=\"Email\" name=\"user-email\" class=\"auth-form__input\")\n\tlabel(class=\"auth-form__label\") Password\n\tinput(type=\"password\" palceholder=\"Password\" name=\"user-password\" class=\"auth-form__input\")\n\tinput(type=\"submit\" class=\"button js-login\" name=\"enter\" value=\"Войти\")\n\tinput(type=\"submit\" class=\"button js-register button-outline\" name=\"register\" value=\"Регистрация\")"};
+;pug_debug_line = 1;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Ch1\u003E";
+;pug_debug_line = 1;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "Супер чат\u003C\u002Fh1\u003E";
+;pug_debug_line = 2;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Ch3\u003E";
+;pug_debug_line = 2;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "Пожалуйства авторизуйтесь\u003C\u002Fh3\u003E";
+;pug_debug_line = 3;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Cform class=\"auth-form\"\u003E";
+;pug_debug_line = 4;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Clabel class=\"auth-form__label\"\u003E";
+;pug_debug_line = 4;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "Email\u003C\u002Flabel\u003E";
+;pug_debug_line = 5;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Cinput class=\"auth-form__input\" type=\"text\" palceholder=\"Email\" name=\"user-email\"\u002F\u003E";
+;pug_debug_line = 6;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Clabel class=\"auth-form__label\"\u003E";
+;pug_debug_line = 6;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "Password\u003C\u002Flabel\u003E";
+;pug_debug_line = 7;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Cinput class=\"auth-form__input\" type=\"password\" palceholder=\"Password\" name=\"user-password\"\u002F\u003E";
+;pug_debug_line = 8;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Cinput class=\"button js-login\" type=\"submit\" name=\"enter\" value=\"Войти\"\u002F\u003E";
+;pug_debug_line = 9;pug_debug_filename = ".\u002Fsrc\u002Fauth\u002Fauth.pug";
+pug_html = pug_html + "\u003Cinput class=\"button js-register button-outline\" type=\"submit\" name=\"register\" value=\"Регистрация\"\u002F\u003E\u003C\u002Fform\u003E";} catch (err) {pug_rethrow(err, pug_debug_filename, pug_debug_line, pug_debug_sources[pug_debug_filename]);};return pug_html;}
